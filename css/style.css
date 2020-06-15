@@ -28,20 +28,6 @@ a {
     background-position: center center;
 }
 
-.overlay-mf {
-    background-color: rgb(11, 11, 119);
-}
-
-.overlay-mf {
-    position: absolute;
-    top: 0;
-    left: 0px;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    opacity: .7;
-}
-
 .paralax-mf {
     position: relative;
     padding: 8rem 0;
@@ -258,6 +244,17 @@ FOOTER
 footer {
     text-align: center;
     color: black
+}
+
+.overlay-mf {
+    background-color: rgb(11, 11, 119);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
 }
 
 .footer-heading {
