@@ -21,18 +21,6 @@ a {
     transition: all 0.5s ease-in-out;
 }
 
-.box-shadow,
-.paralax-mf,
-.information,
-.event-box {
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-}
-
-.box-shadow-a,
-.button:hover {
-    box-shadow: 0 0 0 4px #cde1f8;
-}
-
 .bg-image {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -81,51 +69,23 @@ a {
 }
 
 
-/*--/ Title A /--*/
+/*--/ Title /--*/
 
 .title-box {
     margin-bottom: 4rem;
 }
 
-.title-a {
-    font-size: 3rem;
-    font-weight: bold;
+.title-topic {
+    font-size: 2rem;
+    font-weight: 350;
     text-transform: uppercase;
 }
 
 .line-mf {
     width: 40px;
     height: 5px;
-    background-color: #0078ff;
+    background-color: #044c9e;
     margin: 0 auto;
-}
-
-
-/*--/ Title Left /--*/
-
-.title-box-2 {
-    margin-bottom: 3rem;
-}
-
-.title-left {
-    font-size: 2rem;
-    position: relative;
-}
-
-
-/*------/ Box /------*/
-
-.box-pl2 {
-    padding-left: 2rem;
-}
-
-.box-shadow-full {
-    padding: 3rem 1.25rem;
-    position: relative;
-    background-color: #fff;
-    margin-bottom: 3rem;
-    z-index: 2;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -171,8 +131,14 @@ INTRO
 
 .intro .intro-title {
     color: #fff;
-    font-weight: 400;
+    font-weight: 380;
     font-size: 3rem;
+}
+
+.intro .intro-subtitle {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .intro .table-cell {
@@ -187,6 +153,10 @@ EVENT
 
 .event-box .event-body {
     position: relative;
+}
+
+.event-box {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
 .event-box .event-category-box {
@@ -218,11 +188,12 @@ EVENT
 }
 
 .event-box .event-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: .6rem;
 }
 
 .event-box .event-description {
+    font-size: 0.8rem;
     color: #4e4e4e;
 }
 
@@ -243,8 +214,9 @@ START
 ======================================*/
 
 .banner {
-    font-size: 3rem;
     color: #fff;
+    font-size: 2.5rem;
+    font-weight: 350;
 }
 
 .btn.btn-local {
@@ -261,6 +233,25 @@ START
 
 
 /*======================================
+INFORMATION
+======================================*/
+
+.information {
+    text-align: center;
+    color: black
+}
+
+.information-shadow-full {
+    padding: 3rem 1.25rem;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*======================================
 FOOTER
 ======================================*/
 
@@ -269,14 +260,10 @@ footer {
     color: black
 }
 
-.footer-background {
-    background-color: pink;
-}
-
 .footer-heading {
     font-size: 1.5rem;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 300;
 }
 
