@@ -1,9 +1,14 @@
-server/node_modules/*
 server/npm-debug.log
 server/data-*.json
 server/logs.txt
-*.csv
-sever/*.dump
+server/node_modules/*
 client/node_modules/*
-client/dist/index.bundle.js*
-client/dist/vendor.bundle/js*
+*.csv
+*.dump
+
+*.bundle.js*
+
+# Elastic Beanstalk Files
+server/.elasticbeanstalk/*
+server/!.elasticbeanstalk/*.cfg.yml
+server/!.elasticbeanstalk/*.global.yml
