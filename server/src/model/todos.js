@@ -22,14 +22,14 @@ if (!global.db) {
 //     return db.any(sql, [searchText, start]);
 // }
 
-// function createTodo(mood, text) {
-//     const sql = `
-//         INSERT INTO todos ($<this:name>)
-//         VALUES ($<mood>, $<text>)
-//         RETURNING *
-//     `;
-//     return db.one(sql, {mood, text});
-// }
+function createTodo(mood, text) {
+    const sql = `
+        INSERT INTO todos ($<this:name>)
+        VALUES ($<mood>, $<text>)
+        RETURNING *
+    `;
+    return db.one(sql, {mood, text});
+}
 
 // function accomplishTodo(id){
 //     const sql = `

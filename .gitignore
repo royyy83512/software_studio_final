@@ -2,6 +2,7 @@ server/npm-debug.log
 server/data-*.json
 server/logs.txt
 server/node_modules/*
+server/env.bat
 client/node_modules/*
 *.csv
 *.dump

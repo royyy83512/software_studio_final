@@ -4,6 +4,7 @@
   "description": "WeatherMood server.",
   "main": "src/server.js",
   "scripts": {
+    "devStart": "nodemon server.js",
     "start": "node src/server.js",
     "watch": "nodemon src/server.js",
     "schema": "node src/model/schema.js",
@@ -20,6 +21,7 @@
     "uuid": "^3.0.1"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "dotenv": "^8.2.0",
+    "nodemon": "^1.19.4"
   }
 }
