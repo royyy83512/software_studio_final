@@ -138,11 +138,10 @@
     
             <div class="container">
                 <div class="row justify-content-center">
-                    <!--Modal -->
+                    <!--Modal -->  
                     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
                         Become an organizer
                     </button>
-                    
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -157,39 +156,19 @@
 
                                 <!-- event block -->
                                 <!-- TODO -->
-                                <div class="modal-body">
-                                    Event title
-                                    <input type="text" name=nameUser id="nameUser"\>
-                                </div>
+                                <form action="http://localhost:3000/api/todos" method="GET">
+                                    <div class="modal-body">
+                                        Event title
+                                        <input type="text" name=nameUser id="nameUser"\>
+                                    </div>
 
-                                <div class="modal-body">
-                                    Organizer
-                                    <input type="text" name=nameUser id="nameUser"\>
-                                </div>
-
-                                <div class="modal-body">
-                                    Time
-                                    <input type="text" name=nameUser id="nameUser"\>
-                                </div>
-
-                                <div class="modal-body">
-                                    Location
-                                    <input type="text" name=nameUser id="nameUser"\>
-                                </div>
-
-                                <div class="modal-body">
-                                    Information
-                                    <input type="text" name=nameUser id="nameUser"\>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">
-                                        submit
-                                    </button>
-                                </div>
+                                    <div class="modal-footer">
+                                        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">
+                                            close
+                                        </button> -->
+                                        <input type="submit" class="btn btn-primary" value="send">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

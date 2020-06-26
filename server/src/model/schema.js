@@ -13,6 +13,8 @@ const schemaSql = `
     -- Create    
     CREATE TABLE users (
         user_id SERIAL PRIMARY KEY NOT NULL,
+        email text NOT NULL,
+        pass text NOT NULL,
         nick_name text NOT NULL,
         country text NOT NULL,
         full_name text NOT NULL,
@@ -44,17 +46,17 @@ const dataSql = `
         'Title' || i,
         'User' || i ,
         'I want to Play a game',
-        round(extract(epoch from now()) + (i - 100) * 3600.0)
-    FROM generate_series(1, 100) AS s(i);
+        round(extract(epoch from now()) + (i - 10) * 3600.0)
+    FROM generate_series(1, 10) AS s(i);
         
     INSERT INTO users (nick_name, country, full_name, birth_date, created_at)
     SELECT
         'User' || i,
         'Taiwan',
         'Chen' || i,
-        round(extract(epoch from now()) + (i - 1000) * 3600.0),
-        round(extract(epoch from now()) + (i - 1000) * 3600.0)
-    FROM generate_series(1, 1000) AS s(i);
+        round(extract(epoch from now()) + (i - 10) * 3600.0),
+        round(extract(epoch from now()) + (i - 10) * 3600.0)
+    FROM generate_series(1, 10) AS s(i);
 `;
 
 db.none(schemaSql).then(() => {
