@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="text-center p-t-136">
-                    <a class="create" href="#">
+                    <a class="create" href="#createAccount">
                         Create your Account
                         <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                     </a>
@@ -92,6 +92,79 @@
 		</div>
     </div>
     <!--/ End Login /-->
+
+      <!-- Create Account -->
+      <section id="createAccount" class="create-account">
+        <div class="limiter">
+            <div class="container-create-account">
+                <div class="create-account-form validate-form">
+                    <span class="create-account-title">
+                        Create Account
+                    </span>
+
+                    <!-- <div class="wrap-input100 validate-input"></div> -->
+
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" data-toggle="modal" data-target="#myModal">
+                            Create
+                        </button>
+
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            Your information
+                                        </h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            &times;
+                                        </button>
+                                    </div>
+    
+                                    <!-- information block -->
+                                    <form action="http://localhost:3000/api/todos" method="GET">
+                                        <div class="modal-body">
+                                            Username
+                                            <input type="text" name=userName id="userName" class="form-control" placeholder="enter username">
+                                        </div>
+
+                                        <div class="modal-body">
+                                            Password
+                                            <input type="password" name=passWord id="passWord" class="form-control" placeholder="enter password">
+                                        </div>
+
+                                        <div class="modal-body">
+                                            student ID
+                                            <input type="text" name=studentID id="studentID" class="form-control" >
+                                        </div>
+
+                                        <div class="modal-body">
+                                            Nationality
+                                            <input type="text" name=nationality id="nationality" class="form-control" >
+                                        </div>
+
+
+
+    
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                close
+                                            </button>
+                                            <input type="submit" class="btn btn-primary" value="create account">
+    
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Create Account /-->
 
     <div id="preloader"></div>
 
