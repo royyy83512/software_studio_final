@@ -1,10 +1,6 @@
-// if (!global.db) {
-//     const pgp = require('pg-promise')();
-//     db = pgp(process.env.DB_URL);
-// }
-
-function hello(){
-    console.log("Hello From Model.todos");
+if (!global.db) {
+    const pgp = require('pg-promise')();
+    db = pgp(process.env.DB_URL);
 }
 
 // function listTodos(searchText = '', start, unaccomplishedOnly = false) {
@@ -26,14 +22,15 @@ function hello(){
 //     return db.any(sql, [searchText, start]);
 // }
 
-// function createTodo(mood, text) {
-//     const sql = `
-//         INSERT INTO todos ($<this:name>)
-//         VALUES ($<mood>, $<text>)
-//         RETURNING *
-//     `;
-//     return db.one(sql, {mood, text});
-// }
+function createTodo(email, pass) {
+    console.log("Hello From Model.todos: createTodo");
+    const sql = `
+        INSERT INTO users ($<this:name>)
+        VALUES ($<email>, $<pass>)
+        RETURNING *
+    `;
+    return db.one(sql, {email, pass});
+}
 
 // function accomplishTodo(id){
 //     const sql = `
@@ -47,7 +44,6 @@ function hello(){
 
 module.exports = {
     // listTodos,
-    // createTodo,
+    createTodo
     // accomplishTodo,
-    hello
 };
