@@ -46,6 +46,8 @@ iframe {
   margin: 0 auto;
 }
 
+
+/* login form */
 .container-login100 {
   width: 100%;  
   min-height: 100vh;
@@ -59,29 +61,14 @@ iframe {
   align-items: center;
   padding: 15px;
   background: #5a555f;
-  background: -webkit-linear-gradient(-135deg, #7050c8, #242f68);
-  background: -o-linear-gradient(-135deg, #7050c8, #242f68);
-  background: -moz-linear-gradient(-135deg, #7050c8, #242f68);
-  background: linear-gradient(-135deg, #7050c8, #242f68);
+  background: -webkit-linear-gradient(-135deg, #c850a0, #242f68);
+  background: -o-linear-gradient(-135deg,#c850a0, #242f68);
+  background: -moz-linear-gradient(-135deg, #c850a0, #242f68);
+  background: linear-gradient(-135deg, #c850a0, #242f68);
 }
 
-.wrap-login100 {
-  width: 960px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
 
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 177px 130px 33px 95px;
-}
 
-/* login form */
 .login100-form {
   width: 290px;
 }
@@ -99,7 +86,7 @@ iframe {
 }
 
 
-/* */
+/* input */
 .wrap-input100 {
   position: relative;
   width: 100%;
@@ -120,8 +107,6 @@ iframe {
   padding: 0 30px 0 68px;
 }
 
-
-/* */
 .focus-input100 {
   display: block;
   position: absolute;
@@ -137,20 +122,6 @@ iframe {
 .input100:focus + .focus-input100 {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
-}
-
-@-webkit-keyframes anim-shadow {
-  to {
-    box-shadow: 0px 0px 70px 25px;
-    opacity: 0;
-  }
-}
-
-@keyframes anim-shadow {
-  to {
-    box-shadow: 0px 0px 70px 25px;
-    opacity: 0;
-  }
 }
 
 .symbol-input100 {
@@ -234,7 +205,7 @@ iframe {
 .create {
   width: 100%;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
@@ -299,4 +270,42 @@ iframe {
     visibility: visible;
     opacity: 1;
   }
+}
+
+
+/* section create account */
+
+.container-create-account {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #5a555f;
+  background: -webkit-linear-gradient(-135deg, #4f75c5, #494c5a);
+  background: -o-linear-gradient(-135deg,#4f75c5, #494c5a);
+  background: -moz-linear-gradient(-135deg, #4f75c5, #494c5a);
+  background: linear-gradient(-135deg, #4f75c5, #494c5a);
+}
+
+.create-account-form {
+  width: 290px;
+}
+
+.create-account-title {
+  font-size: 32px;
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+
+  width: 100%;
+  display: block;
+  padding-bottom: 40px;
 }
