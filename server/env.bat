@@ -5,9 +5,9 @@ echo Setting Env...
 SET NODE_ENV=development
 SET PG_HOSTNAME=localhost
 SET PG_PORT=5432
-SET PG_USERNAME=postgres
+SET PG_USERNAME=JC
 SET PG_DB_NAME=ssFinal
-SET PG_PASSWORD=jhad3473
+SET PG_PASSWORD=0000
 
 echo Setting Success!
 echo %NODE_ENV%

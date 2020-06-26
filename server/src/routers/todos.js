@@ -24,22 +24,6 @@ router.use(accessController); // Allows cross-origin HTTP requests
 // });
 
 router.get('/todos', function(req, res, next){
-    // const {searchText, start} = req.query;
-    // let unaccomplishedOnly;
-    // console.log("get!");
-    // if (req.query.unaccomplishedOnly === 'true')
-    //     unaccomplishedOnly = true;
-    // else
-    //     unaccomplishedOnly = false;
-    // todoModel.listTodos(searchText, start, unaccomplishedOnly).then(todos => {
-    //     res.json(todos);
-    // }).catch(next);
-});
-
-// CreatTodo
-// router.post('/todos',function(req, res, next){
-//     const {mood, text} = req.body;
-//     console.log("post!");
 //     if (!mood || !text) {
 //         const err = new Error('Mood and text are required');
 //         err.status = 400;

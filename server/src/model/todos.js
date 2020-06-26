@@ -1,6 +1,10 @@
-if (!global.db) {
-    const pgp = require('pg-promise')();
-    db = pgp(process.env.DB_URL);
+// if (!global.db) {
+//     const pgp = require('pg-promise')();
+//     db = pgp(process.env.DB_URL);
+// }
+
+function hello(){
+    console.log("Hello From Model.todos");
 }
 
 // function listTodos(searchText = '', start, unaccomplishedOnly = false) {
@@ -41,8 +45,9 @@ function createTodo(mood, text) {
 //     return db.one(sql, [id]);
 // }
 
-// module.exports = {
-//     listTodos,
-//     createTodo,
-//     accomplishTodo
-// };
+module.exports = {
+    // listTodos,
+    // createTodo,
+    // accomplishTodo,
+    hello
+};

@@ -15,6 +15,7 @@ const app = express();
 // }));
 
 app.use('/api', todoRouter);
+console.log("Hello After Api")
 app.get('/*', (req, res) => res.redirect('/'));
 app.use(errorHandler);
 
