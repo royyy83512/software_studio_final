@@ -11,7 +11,7 @@ router.use(accessController); // Allows cross-origin HTTP requests
 
 // TodoList
 router.get('/todos', function(req, res, next){
-    console.log(req)
+    console.log(req.query)
     console.log("Hello From Router.todos")
     todoModel.hello();
 });
