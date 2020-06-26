@@ -1,7 +1,6 @@
 require('../config.js');
 const express = require('express');
 
-const postRouter = require('./routers/posts.js');
 const todoRouter = require('./routers/todos.js');
 // const requestLogger = require('./middleware/request-logger.js');
 const errorHandler = require('./middleware/error-handler.js');
@@ -15,8 +14,8 @@ app.use(express.static('dist', {
     }
 }));
 
-app.use('/api', postRouter);
 app.use('/api', todoRouter);
+console.log("Hello After Api")
 app.get('/*', (req, res) => res.redirect('/'));
 app.use(errorHandler);
 
